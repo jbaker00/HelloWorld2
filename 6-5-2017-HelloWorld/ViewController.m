@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lblOut;
 
 @end
 
@@ -19,6 +20,9 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)clickMe:(id)sender {
+    _lblOut.text = @"GoodBye World";
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
